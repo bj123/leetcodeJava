@@ -31,6 +31,7 @@ public class LettCode58 {
 	 */
 	 public static  int lengthOfLastWord(String s) {
 		 if(s.trim().length()==0){
+		
 			 return 0;
 		 }
 		 String [] strings=s.split(" ");

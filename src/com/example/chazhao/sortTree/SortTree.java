@@ -220,7 +220,7 @@ public class SortTree {
 		t.insertBST(root, 80);
 		t.postOrder(root);
 		System.out.println("-----------------");
-		t.posOrder1(root);
+		t.inOrder1(root);
 //		t.deleteBST(root, 44);
 		System.out.println();
 //		t.preOrder(t.deleteBST(root, 44));
