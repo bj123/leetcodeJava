@@ -17,10 +17,10 @@ public class ReentrantLockTest {
     private static ReentrantLock lock=new ReentrantLock();
     private  int i=0;
     public  void  a(){
-//        lock.lock();
+        lock.lock();
         i++;
 
-//        lock.unlock();
+        lock.unlock();
 
 
     }
