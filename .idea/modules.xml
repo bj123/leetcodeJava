@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../boot-actuator/actuator-service/actuator-service.iml" filepath="$PROJECT_DIR$/../boot-actuator/actuator-service/actuator-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../boot-actuator/boot-monitor/boot-monitor.iml" filepath="$PROJECT_DIR$/../boot-actuator/boot-monitor/boot-monitor.iml" />
       <module fileurl="file://$PROJECT_DIR$/leetcodeJava.iml" filepath="$PROJECT_DIR$/leetcodeJava.iml" />
     </modules>
   </component>
