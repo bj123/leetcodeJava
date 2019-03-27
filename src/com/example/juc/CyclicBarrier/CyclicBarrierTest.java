@@ -1,4 +1,4 @@
-package com.example.juc;
+package com.example.juc.CyclicBarrier;
 
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.CyclicBarrier;

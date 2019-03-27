@@ -1,4 +1,4 @@
-package com.example.juc;
+package com.example.juc.Condition;
 
 import java.util.LinkedList;
 import java.util.concurrent.locks.Condition;

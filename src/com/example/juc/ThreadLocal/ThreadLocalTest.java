@@ -1,4 +1,4 @@
-package com.example.juc;
+package com.example.juc.ThreadLocal;
 
 /**
  * `ThreadLocal` 是一个本地线程副本变量工具类。

@@ -1,4 +1,4 @@
-package com.example.juc;
+package com.example.juc.ReentrantLock;
 import javax.jws.Oneway;
 import java.util.HashMap;
 import java.util.Map;

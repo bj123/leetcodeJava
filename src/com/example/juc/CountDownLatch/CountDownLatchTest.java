@@ -1,4 +1,4 @@
-package com.example.juc;
+package com.example.juc.CountDownLatch;
 
 import org.omg.Messaging.SYNC_WITH_TRANSPORT;
 

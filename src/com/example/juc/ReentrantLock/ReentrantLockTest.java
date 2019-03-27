@@ -1,6 +1,5 @@
-package com.example.juc;
+package com.example.juc.ReentrantLock;
 
-import java.awt.*;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**

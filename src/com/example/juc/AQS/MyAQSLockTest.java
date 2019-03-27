@@ -1,4 +1,4 @@
-package com.example.juc;
+package com.example.juc.AQS;
 
 /**
  * 〈一句话功能简述〉<br>
