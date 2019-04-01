@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/../boot-actuator/actuator-service" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../boot-actuator/boot-monitor" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../alibaba-cloud" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../alibaba-cloud/cloud-client" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../alibaba-cloud/cloud-config" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../alibaba-cloud/cloud-consumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../alibaba-cloud/cloud-rocketmq" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../alibaba-cloud/cloud-sentinel" charset="UTF-8" />
   </component>
 </project>

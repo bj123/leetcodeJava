@@ -3,8 +3,12 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/../boot-actuator/actuator-service/pom.xml" />
-        <option value="$PROJECT_DIR$/../boot-actuator/boot-monitor/pom.xml" />
+        <option value="$PROJECT_DIR$/../alibaba-cloud/pom.xml" />
+        <option value="$PROJECT_DIR$/../alibaba-cloud/cloud-client/pom.xml" />
+        <option value="$PROJECT_DIR$/../alibaba-cloud/cloud-config/pom.xml" />
+        <option value="$PROJECT_DIR$/../alibaba-cloud/cloud-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/../alibaba-cloud/cloud-rocketmq/pom.xml" />
+        <option value="$PROJECT_DIR$/../alibaba-cloud/cloud-sentinel/pom.xml" />
       </list>
     </option>
   </component>

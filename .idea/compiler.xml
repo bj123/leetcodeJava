@@ -8,11 +8,22 @@
         <outputRelativeToContentRoot value="true" />
         <module name="actuator-service" />
         <module name="boot-monitor" />
+        <module name="cloud-client" />
+        <module name="cloud-config" />
+        <module name="cloud-consumer" />
+        <module name="cloud-rocketmq" />
+        <module name="cloud-sentinel" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="actuator-service" target="1.8" />
+      <module name="alibaba-cloud" target="1.8" />
       <module name="boot-monitor" target="1.8" />
+      <module name="cloud-client" target="1.8" />
+      <module name="cloud-config" target="1.8" />
+      <module name="cloud-consumer" target="1.8" />
+      <module name="cloud-rocketmq" target="1.8" />
+      <module name="cloud-sentinel" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
