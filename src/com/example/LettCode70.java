@@ -22,7 +22,7 @@ package com.example;
 public class LettCode70 {
 
 	public static void main(String[] args) {
-		System.out.println(climbStairs(4));
+		System.out.println(climbStairs2(4));
 	}
 	
 	
@@ -53,4 +53,24 @@ public class LettCode70 {
           }
           return total;
     }
+
+    /**
+     * 斐波那契数列求法
+     * @param n
+     * @return
+     */
+    public static int climbStairs2(int n) {
+        if (n ==0 || n==1||n==2) {
+            return n;
+        }
+        int [] mem=new int[n];
+        mem[0]=1;
+        mem[1]=2;
+        for (int i = 2; i <n ; i++) {
+                mem[i]=mem[i-1]+mem[i-2];
+        }
+        return mem[n-1];
+    }
+
+
 }

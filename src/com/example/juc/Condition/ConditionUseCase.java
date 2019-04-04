@@ -38,7 +38,7 @@ public class ConditionUseCase {
             super();
             this.test = test;
         }
-        @Override
+
         public void run() {
             test.await();
         }

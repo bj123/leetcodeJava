@@ -22,7 +22,7 @@ public class CountDownLatchTest {
     static CountDownLatch countDownLatch=new CountDownLatch(3);
     //汇总任务
     static class T1 extends Thread{
-        @Override
+
         public void run() {
             try {
                 countDownLatch.await();
@@ -36,7 +36,7 @@ public class CountDownLatchTest {
 
     //批量处里表格数据任务
     static class task  extends Thread{
-        @Override
+
         public void run() {
             System.out.println(Thread.currentThread().getName() + "：开始处理表格数据");
             //处理完计数器就减1

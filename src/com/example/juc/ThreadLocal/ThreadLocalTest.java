@@ -12,7 +12,7 @@ package com.example.juc.ThreadLocal;
 public class ThreadLocalTest {
     ThreadLocal<Integer> threadLocal=new ThreadLocal<Integer>(){
         //返回此线程局部变量的当前线程的“初始值”。
-        @Override
+
         protected Integer initialValue() {
             return 0;
         }
