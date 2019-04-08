@@ -1,31 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/../boot-actuator/actuator-service" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../boot-actuator/boot-monitor" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../boot-cloud" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../boot-cloud/springboot-admin-client" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../boot-cloud/springboot-admin-server" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../boot-cloud/springboot-elasticsearch" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../boot-cloud/springboot-kafka" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../boot-cloud/springboot-multi-data" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../boot-cloud/springboot-netty" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../boot-cloud/springboot-rocketmq" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../boot-cloud/springboot-sessiom" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../boot-cloud/springcloud" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../boot-cloud/springcloud/consul-consumer" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../boot-cloud/springcloud/consul-producer" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../boot-cloud/springcloud/serice-feign" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../boot-cloud/springcloud/service-client" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../boot-cloud/springcloud/service-hi" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../boot-cloud/springcloud/service-miya" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../boot-cloud/springcloud/service-register" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../boot-cloud/springcloud/service-ribbon" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../boot-cloud/springcloud/service-security-register" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../boot-cloud/springcloud/service-zuul" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../githubWork/alibaba-cloud" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../githubWork/boot-cloud/springboot-ehcahe" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../githubWork/boot-cloud/springboot-freemarker" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../githubWork/boot-cloud/springboot-socketio" charset="UTF-8" />
-    <file url="file://F:/springBoot" charset="UTF-8" />
   </component>
 </project>
