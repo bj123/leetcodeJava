@@ -13,7 +13,7 @@ public class Join {
         public  MyThread1(String name){
             setName(name);
         }
-        @Override
+
         public void run() {
             try {
                 Thread.sleep(1000);
@@ -28,7 +28,7 @@ public class Join {
         public  MyThread2(String name){
                 setName(name);
         }
-        @Override
+
         public void run() {
             try {
                 Thread.sleep(10000);
@@ -43,7 +43,7 @@ public class Join {
         public  MyThread3(String name){
             setName(name);
         }
-        @Override
+
         public void run() {
             System.out.println("t3线程执行");
         }

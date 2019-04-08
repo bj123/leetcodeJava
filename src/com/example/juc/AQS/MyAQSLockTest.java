@@ -42,7 +42,7 @@ public class MyAQSLockTest {
     public static void main(String[] args){
         MyAQSLockTest test=new MyAQSLockTest();
 //         Thread thread = new Thread(new Runnable() {
-//            @Override
+//
 //            public void run() {
 //                while (true) {
 //
@@ -55,7 +55,7 @@ public class MyAQSLockTest {
 //        thread.start();
 //
 //        Thread thread2 = new Thread(new Runnable() {
-//            @Override
+//
 //            public void run() {
 //                while (true) {
 //
@@ -69,7 +69,7 @@ public class MyAQSLockTest {
 
         //可重复锁演示
         Thread thread3 = new Thread(new Runnable() {
-            @Override
+
             public void run() {
                 test.test1();
 

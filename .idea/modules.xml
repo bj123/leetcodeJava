@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../alibaba-cloud/alibaba-cloud.iml" filepath="$PROJECT_DIR$/../alibaba-cloud/alibaba-cloud.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../alibaba-cloud/cloud-client/cloud-client.iml" filepath="$PROJECT_DIR$/../alibaba-cloud/cloud-client/cloud-client.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../alibaba-cloud/cloud-config/cloud-config.iml" filepath="$PROJECT_DIR$/../alibaba-cloud/cloud-config/cloud-config.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../alibaba-cloud/cloud-consumer/cloud-consumer.iml" filepath="$PROJECT_DIR$/../alibaba-cloud/cloud-consumer/cloud-consumer.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../alibaba-cloud/cloud-rocketmq/cloud-rocketmq.iml" filepath="$PROJECT_DIR$/../alibaba-cloud/cloud-rocketmq/cloud-rocketmq.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../alibaba-cloud/cloud-sentinel/cloud-sentinel.iml" filepath="$PROJECT_DIR$/../alibaba-cloud/cloud-sentinel/cloud-sentinel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../githubWork/alibaba-cloud/alibaba-cloud.iml" filepath="$PROJECT_DIR$/../githubWork/alibaba-cloud/alibaba-cloud.iml" />
       <module fileurl="file://$PROJECT_DIR$/leetcodeJava.iml" filepath="$PROJECT_DIR$/leetcodeJava.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../githubWork/boot-cloud/springboot-ehcahe/springboot-ehcahe.iml" filepath="$PROJECT_DIR$/../githubWork/boot-cloud/springboot-ehcahe/springboot-ehcahe.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../githubWork/boot-cloud/springboot-freemarker/springboot-freemarker.iml" filepath="$PROJECT_DIR$/../githubWork/boot-cloud/springboot-freemarker/springboot-freemarker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../githubWork/boot-cloud/springboot-socketio/springboot-socketio.iml" filepath="$PROJECT_DIR$/../githubWork/boot-cloud/springboot-socketio/springboot-socketio.iml" />
     </modules>
   </component>
 </project>

@@ -27,7 +27,7 @@ public class MyAQSLock implements Lock {
          * @param arg
          * @return
          */
-        @Override
+
         protected boolean tryAcquire(int arg) {
             //获取同步状态状态的成员变量的值
             int state=getState();
@@ -53,7 +53,7 @@ public class MyAQSLock implements Lock {
          * @param arg
          * @return
          */
-        @Override
+
         protected boolean tryRelease(int arg) {
             boolean flag=false;
             //判断释放操作是否是当前线程，
@@ -79,12 +79,12 @@ public class MyAQSLock implements Lock {
         }
     }
 
-    @Override
+
     public void lock() {
             sync.acquire(1);
     }
 
-    @Override
+
     public void lockInterruptibly() throws InterruptedException {
         sync.acquireInterruptibly(1);
     }
@@ -93,12 +93,12 @@ public class MyAQSLock implements Lock {
      * 加锁
      * @return
      */
-    @Override
+
     public boolean tryLock() {
         return sync.tryAcquire(1);
     }
 
-    @Override
+
     public boolean tryLock(long time, TimeUnit unit) throws InterruptedException {
         return sync.tryAcquireNanos(1,unit.toNanos(time));
     }
@@ -106,12 +106,12 @@ public class MyAQSLock implements Lock {
     /**
      * 释放锁
      */
-    @Override
+
     public void unlock() {
         sync.tryRelease(1);
     }
 
-    @Override
+
     public Condition newCondition() {
         return sync.newCondition();
     }
