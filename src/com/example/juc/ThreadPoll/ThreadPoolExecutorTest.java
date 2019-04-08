@@ -1,4 +1,4 @@
-package com.example.juc;
+package com.example.juc.ThreadPoll;
 
 import java.util.concurrent.*;
 import java.util.concurrent.atomic.AtomicInteger;
