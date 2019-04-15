@@ -27,9 +27,48 @@ public class LettCode02 {
 
 
     }
-    public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
 
-        return  null;
+    /**
+     * 设立一个表示进位的变量carried，建立一个新链表，把输入的两个链表从头往后同时处理，每两个相加，
+     * 将结果加上carried后的值作为一个新节点到新链表后面。
+     *
+     * 将当前结点初始化为返回列表的哑结点。
+     * 将进位 carry 初始化为 00。
+     * 将 p1 和 p2 分别初始化为列表 l1 和 l2 的头部。
+     * 遍历列表 l1l1 和 l2l2 直至到达它们的尾端。
+     *      将 x 设为结点 p1 的值。如果 p1 已经到达 l1 的末尾，则将其值设置为 0。
+     *      将 y 设为结点 p2 的值。如果 p2 已经到达 l2 的末尾，则将其值设置为 0。
+     *      设定 sum = x + y + carry
+     *      更新进位的值，carry = sum / 10
+     *      创建一个数值为 (sum mod 10) 的新结点，并将其设置为当前结点的下一个结点，然后将当前结点前进到下一个结点。
+     *      同时，将 p1 和 p2 前进到下一个结点。
+     * 检查 carry =  是否成立，如果成立，则向返回列表追加一个含有数字 1 的新结点。
+     * 返回哑结点的下一个结点。
+     * @param l1
+     * @param l2
+     * @return
+     */
+    public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+        ListNode p1=l1;
+        ListNode p2=l2;
+        ListNode dummyHead=new ListNode(-1);
+        ListNode cur=dummyHead;
+
+        int carry = 0;
+        while (p1 !=null || p2!=null){
+            int x = (p1 != null) ? p1.val : 0;
+            int y = (p2 != null) ? p2.val : 0;
+            int sum=carry+x+y;
+            carry=sum/10;
+            cur.next = new ListNode(sum % 10);
+            cur = cur.next;
+            if (p1 != null) p1 = p1.next;
+            if (p2 != null) p2 = p2.next;
+        }
+        if (carry > 0) {
+            cur.next = new ListNode(carry);
+        }
+        return dummyHead.next;
     }
 
 

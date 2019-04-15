@@ -77,11 +77,13 @@ public class LettCode206 {
 			//如果没有结点或者只有一个结点直接返回pHead
 			return head;
 		}
-		ListNode next = head.next; //保存当前结点的下一结点
+		//保存当前结点的下一结点
+		ListNode next = head.next;
 		head.next = null;  
 		//递归结束时reverseHead一定是新链表的头结点
-		ListNode reverseHead = reverseList3(next); 
-		next.next = head; //修改指针域
+		ListNode reverseHead = reverseList3(next);
+		//修改指针域
+		next.next = head;
 		return reverseHead;
 	}
 
