@@ -28,34 +28,38 @@ public class Stack04 {
      *
      * @param stack
      */
-    public  static  void  sort(Stack<Integer> stack){
+    public  static  void  sortStack(Stack<Integer> stack){
         Stack<Integer> help=new Stack<>();
         while (!stack.isEmpty()){
-                int cur=stack.peek();
-                //如果 cur大于help栈顶元素 则将help元素逐一弹出压入到stack,直到cur小于或等于help栈顶元素
-                while (!help.isEmpty() &&  help.peek()>cur){
-                    stack.push(help.pop());
-                }
-            //如果 cur小于或等于help栈顶元素 则将cur压入help
+                int cur=stack.pop();
+            while (!help.isEmpty() && help.peek() > cur) {
+                stack.push(help.pop());
+            }
             help.push(cur);
         }
 
         while (!help.isEmpty()){
                 stack.push(help.pop());
         }
-
     }
 
+
+
     public static void main(String[] args) {
-        Stack<Integer> stack=new Stack<>();
+        Stack<Integer> stack = new Stack<Integer>();
         stack.push(3);
         stack.push(1);
-        stack.push(5);
+        stack.push(6);
         stack.push(2);
+        stack.push(5);
         stack.push(4);
-        sort(stack);
-
-        System.out.println(stack.peek());
+        sortStack(stack);
+        System.out.println(stack.pop());
+        System.out.println(stack.pop());
+        System.out.println(stack.pop());
+        System.out.println(stack.pop());
+        System.out.println(stack.pop());
+        System.out.println(stack.pop());
 
     }
 
