@@ -31,11 +31,17 @@ public class LettCode160 {
 
         @Override
         public boolean equals(Object obj) {
-            if (obj ==  null )  return   false ;
-            if ( this  == obj)  return   true ;
+            if (obj ==  null ){
+                return   false ;
+            }
+            if ( this  == obj) {
+                return   true ;
+            }
             if (obj  instanceof  ListNode){
                 ListNode node = (ListNode)obj;
-                if (val==node.val) return   true ;
+                if (val==node.val) {
+                    return   true ;
+                }
             }
 
             return   false ;
@@ -69,6 +75,49 @@ public class LettCode160 {
 
         return  null;
     }
+
+    /**
+     *  计算出headA和headB中那个链表最长，计算出长度
+     *  把长度较长的链表偏移，使两个链表对齐。
+     *  最后同同时遍历两个链表，如果相等 说明它们相交了
+     * @param headA
+     * @param headB
+     * @return
+     */
+    public ListNode getIntersectionNode2(ListNode headA, ListNode headB) {
+        int a=getLength(headA);
+        int b=getLength(headB);
+
+//       把长度较长的链表偏移，使两个链表对齐。
+        if(a>b){
+            for (int i = 0; i <a-b ; i++) {
+                headA=headA.next;
+            }
+        }else{
+            for (int i = 0; i <b-a ; i++) {
+                headB=headB.next;
+            }
+        }
+        //最后同同时遍历两个链表，如果相等 说明它们相交了
+            while (headA!=null && headB!=null && headA!=headB){
+                headA=headA.next;
+                headB=headB.next;
+            }
+
+           return  headA;
+    }
+
+    public  int getLength(ListNode head){
+        int count=0;
+        while (head!=null){
+            ++count;
+            head=head.next;
+        }
+        return  count;
+    }
+
+
+
 
     public static void main(String[] args) {
         ListNode headA=new ListNode(1);
