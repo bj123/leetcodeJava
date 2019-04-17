@@ -67,13 +67,15 @@ public class LettCode01 {
 	 * @return
 	 */
 	public static int[] twoSum2(int[] nums, int target) {
-		 	Map<Integer, Integer> map = new HashMap<>();
+		 	Map<Integer, Integer> map = new HashMap<>(2);
 		     for (int i = 0; i < nums.length; i++) {
-				int result=target-nums[i];  //比如target=9, 		1: 第一次遍历  9-2=7 , 2: 9-7=2
+				 //比如target=9, 		1: 第一次遍历  9-2=7 , 2: 9-7=2
+				int result=target-nums[i];
 				if(map.containsKey(result)){
 					 return new int[] {map.get(result), i };
 				}
-				map.put(nums[i], i);  //第一次map中没有7这个元素 	1: put(2,0)
+				 //第一次map中没有7这个元素 	1: put(2,0)
+				map.put(nums[i], i);
 			}
 			return null;
 		       
