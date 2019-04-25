@@ -11,8 +11,6 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 
 public class ThreadPoolExecutorTest {
-
-    // 命名线程工厂
     static class NamedThreadFactory implements ThreadFactory {
         private static final AtomicInteger poolNumber = new AtomicInteger(1);
         private final ThreadGroup group;
@@ -20,7 +18,6 @@ public class ThreadPoolExecutorTest {
         private final String namePrefix;
 
         NamedThreadFactory(String name) {
-
             SecurityManager s = System.getSecurityManager();
             group = (s != null) ? s.getThreadGroup() : Thread.currentThread().getThreadGroup();
             if (null == name || name.isEmpty()) {
@@ -30,6 +27,7 @@ public class ThreadPoolExecutorTest {
             namePrefix = name + "-" + poolNumber.getAndIncrement() + "-thread-";
         }
 
+        @Override
         public Thread newThread(Runnable r) {
             Thread t = new Thread(group, r, namePrefix + threadNumber.getAndIncrement(), 0);
             if (t.isDaemon())
