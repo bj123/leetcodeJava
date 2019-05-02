@@ -48,6 +48,8 @@ public class LettCode876 {
                 head=head.next;
         }
 
+
+
         int middle=list.size()/2;
         return  list.get(middle);
 
