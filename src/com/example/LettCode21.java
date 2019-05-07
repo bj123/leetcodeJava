@@ -14,12 +14,8 @@ package com.example;
  */
 public class LettCode21 {
 	public static class ListNode{
-		//数据域
 		int val;
-		//指针域 指向下一个节点
 		ListNode next;
-		
-		// 头结点的构造方法
 		public ListNode(ListNode nextval) {
 			this.next = nextval;
 		}
@@ -29,7 +25,13 @@ public class LettCode21 {
 		}
 		
 	}
-	
+
+	/**
+	 * 遍历两个链表并比较大小 放入新链表
+	 * @param l1
+	 * @param l2
+	 * @return
+	 */
 	 public static ListNode mergeTwoLists(ListNode l1, ListNode l2) {
 		 if (l1 == null) return l2;
 	     if (l2 == null) return l1;
